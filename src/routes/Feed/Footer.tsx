@@ -5,6 +5,9 @@ import styled from "@emotion/styled"
 const d = new Date()
 const y = d.getFullYear()
 const from = +CONFIG.since
+const start = '2018'
+
+const showName = 'Telegram自由市场'
 
 type Props = {
   className?: string
@@ -18,7 +21,7 @@ const Footer: React.FC<Props> = ({ className }) => {
         target="_blank"
         rel="noreferrer"
       >
-        © {CONFIG.profile.name} {from === y || !from ? y : `${from} - ${y}`}
+        © {showName} {from === y || !from ? y : `${start} - ${y}`}
       </a>
     </StyledWrapper>
   )

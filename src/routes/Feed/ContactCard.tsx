@@ -6,6 +6,7 @@ import {
   AiOutlineMail,
   AiFillLinkedin,
 } from "react-icons/ai"
+import { BiPaperPlane } from "react-icons/bi"
 import styled from "@emotion/styled"
 
 const ContactCard: React.FC = () => {
@@ -52,6 +53,16 @@ const ContactCard: React.FC = () => {
           >
             <AiFillLinkedin className="icon" />
             <div className="name">linkedin</div>
+          </a>
+        )}
+        {CONFIG.profile.telegram && (
+          <a
+            href={`https://www.linkedin.com/in/${CONFIG.profile.linkedin}`}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <BiPaperPlane  className="icon" />
+            <div className="name">telegram</div>
           </a>
         )}
       </StyledWrapper>

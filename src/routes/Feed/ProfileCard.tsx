@@ -3,6 +3,7 @@ import Image from "next/image"
 import React from "react"
 import styled from "@emotion/styled"
 import { Emoji } from "src/components/Emoji"
+import { AiOutlineUser } from "react-icons/ai"
 
 type Props = {}
 
@@ -10,7 +11,7 @@ const ProfileCard: React.FC<Props> = () => {
   return (
     <StyledWrapper>
       <div className="title">
-        <Emoji>💻</Emoji> Profile
+      <AiOutlineUser /> Profile
       </div>
       <div className="content">
         <div className="top">
